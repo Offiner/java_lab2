@@ -79,6 +79,12 @@ public class Main {
         a) sprawdzić jak zachowuje się pętla while gdy w jej warunku damy true --> while(true)
         b) a jak gdy damy false --> while(false)
         */
+        while(true){
+            System.out.println("tak");
+        }
+//        while(false){
+//            System.out.println("tak");
+//        }
 
     }
 }
