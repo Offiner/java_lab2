@@ -16,9 +16,29 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Podaj liczbę");
         int a = scan.nextInt();
-        switch (a % 2) {
+        switch(a % a) {
             case 0:
-        })
+                System.out.println("Parzysta");
+                break;
+            case 1:
+                System.out.println("Nieparzysta");
+                break;
+            default:
+                System.out.println("To nie jest liczba");
+                break;}
+            int b = scan.nextInt();
+            switch(b % 7) {
+                case 0:
+                    System.out.println("Parzysta");
+                    break;
+                case 1:
+                    System.out.println("Nieparzysta");
+                    break;
+                default:
+                    System.out.println("To nie jest liczba");
+                    break;
+            }
+        }
         /* zad.2
            a) napisać program podobny do programu z przykładu, który ma zliczyć iloś liter 'o', 'p', 'x', 'z', 'q' w wyrazie:
             "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo"
