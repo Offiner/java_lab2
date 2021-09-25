@@ -9,6 +9,15 @@ public class Main {
           to dać komunikat "liczba XX podzielna przez YY" (XX-liczba podzielna YY-podzielnik)
         */
 
+        int licznik = 1000;
+
+        while(licznik>=0){
+            System.out.println("To jest petla");
+            licznik--;
+            if(licznik % 15 == 0)
+                System.out.println("Liczba " + licznik + " jest podzielna przez 15");
+        }
+        System.out.println("Koniec pętli");
 
         /* zad 2
         a) stworzyć tablicę typu int wielkosci 5, przypisac jej dowolne wartości,
