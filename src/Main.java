@@ -11,10 +11,9 @@ public class Main {
 
         int licznik = 1000;
 
-        while(licznik>=0){
-            System.out.println("To jest petla");
+        while (licznik >= 0) {
             licznik--;
-            if(licznik % 15 == 0)
+            if (licznik % 15 == 0)
                 System.out.println("Liczba " + licznik + " jest podzielna przez 15");
         }
         System.out.println("Koniec pętli");
@@ -25,6 +24,56 @@ public class Main {
         b) jak wyżej tylko dla tablicy typu double[],
         c) jak wyżej dla tablicy String[], przeiterować i wyświetlić od ostatniego elementu
         */
+        //a
+        System.out.println("Tab int");
+        int[] tab = new int[5];
+        tab[0] = 1;
+        tab[1] = 2;
+        tab[2] = 3;
+        tab[3] = 4;
+        tab[4] = 5;
+        {int i = tab.length-1;
+            int j = 0;
+        while( i >= 0 ) {
+
+            System.out.println(tab[j]);
+            i--;
+            j++;
+
+        }}
+        //b
+        double[] tab2 = new double[5];
+        tab2[0] = 1;
+        tab2[1] = 2;
+        tab2[2] = 3;
+        tab2[3] = 4;
+        tab2[4] = 5;
+        System.out.println("Tab double");
+        {int i = tab.length-1;
+            int j = 0;
+        while( i >= 0 ) {
+
+            System.out.println(tab2[j]);
+            i--;
+            j++;
+
+        }}
+        //c
+        String[] tab3 = new String[5];
+        tab3[0] = "jeden";
+        tab3[1] = "dwa";
+        tab3[2] = "trzy";
+        tab3[3] = "cztery";
+        tab3[4] = "pięć";
+        System.out.println("Tab string");
+        {int i = tab.length-1;
+            while( i >= 0 ) {
+
+                System.out.println(tab3[i]);
+                i--;
+
+            }}
+
 
         /* zad.3
         a) sprawdzić jak zachowuje się pętla while gdy w jej warunku damy true --> while(true)
