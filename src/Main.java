@@ -13,7 +13,12 @@ public class Main {
           a) ta liczba jest parzysta --> podpowiedz switch(a % 2) {
           b) program który określi czy liczba jest podzielna przez 7
          */
-
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj liczbę");
+        int a = scan.nextInt();
+        switch (a % 2) {
+            case 0:
+        })
         /* zad.2
            a) napisać program podobny do programu z przykładu, który ma zliczyć iloś liter 'o', 'p', 'x', 'z', 'q' w wyrazie:
             "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo"
