@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Main {
@@ -16,7 +17,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Podaj liczbę");
         int a = scan.nextInt();
-        switch(a % a) {
+        switch (a % a) {
             case 0:
                 System.out.println("Parzysta");
                 break;
@@ -25,25 +26,58 @@ public class Main {
                 break;
             default:
                 System.out.println("To nie jest liczba");
-                break;}
-            int b = scan.nextInt();
-            switch(b % 7) {
-                case 0:
-                    System.out.println("Parzysta");
-                    break;
-                case 1:
-                    System.out.println("Nieparzysta");
-                    break;
-                default:
-                    System.out.println("To nie jest liczba");
-                    break;
-            }
+                break;
         }
+        int b = scan.nextInt();
+        switch (b % 7) {
+            case 0:
+                System.out.println("Podzielna przez 7");
+                break;
+            case 1:
+                System.out.println("Nie jest podzielna przez 7");
+                break;
+            default:
+                System.out.println("To nie jest liczba");
+                break;
+        }
+
         /* zad.2
            a) napisać program podobny do programu z przykładu, który ma zliczyć iloś liter 'o', 'p', 'x', 'z', 'q' w wyrazie:
             "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo"
            b) oraz ma określić ile jest pozostałych liter, które nie należą do: 'o', 'p', 'x', 'z', 'q'
          */
+        String wyraz = "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo";
+        int o = 0, p = 0, x = 0, z = 0, q = 0, xy = 0;
+        for (int i = 0; i < wyraz.length(); i++) {
+
+            switch (wyraz.charAt(i)) {
+                case 'o':
+                    o++;
+                    break;
+                case 'p':
+                    p++;
+                    break;
+                case 'x':
+                    x++;
+                    break;
+                case 'z':
+                    z++;
+                    break;
+                case 'q':
+                    q++;
+                    break;
+                default:
+                    xy++;
+                    break;
+            }
+
+        }
+        System.out.println("W wyrazie ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo" +
+                "jest: " + o + ", "+ p + ", "+ x + ", "+ z + ", "+ q + ", oraz: " + xy + " pozostałych.");
+
+
+        /**/
 
     }
 }
+
